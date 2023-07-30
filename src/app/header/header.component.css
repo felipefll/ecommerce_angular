@@ -27,6 +27,7 @@
 .main-header__menu ul {
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .main-header__menu a {
@@ -81,4 +82,5 @@
   border: none;
   color: #fff;
   font-size: 22px;
+  cursor: pointer;
 }
