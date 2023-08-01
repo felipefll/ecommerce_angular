@@ -7,6 +7,10 @@ export interface IProduto {
   imagem: string;
 }
 
+export interface IProdutoCarrinho extends IProduto {
+  quantidade: number;
+}
+
 export const produtos: IProduto[] = [
   {
     id: 1,
@@ -34,7 +38,7 @@ export const produtos: IProduto[] = [
   },
   {
     id: 4,
-    descricao: 'Fone para quem joga FPS',
+    descricao: 'Fone para jogo FPS',
     preco: 599.99,
     descricaoPreco: 'À vista no PIX',
     imagem: '/assets/fone-de-ouvido-2.jpg',
@@ -66,7 +70,7 @@ export const produtos: IProduto[] = [
   },
   {
     id: 8,
-    descricao: 'Combo de placas de vídeo',
+    descricao: 'Placas de vídeo',
     preco: 18449.99,
     descricaoPreco: 'À vista no PIX',
     imagem: '/assets/placa-video.jpg',

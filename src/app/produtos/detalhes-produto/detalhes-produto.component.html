@@ -14,6 +14,8 @@
     <p class="product__avaliability">
       {{ produto?.quantidadeEstoque }} unidade(s) em estoque
     </p>
-    <button>Adicionar ao carrinho</button>
+    <button (click)="adicionarAoCarrinho()" routerLink="/produtos">
+      Adicionar ao carrinho
+    </button>
   </div>
 </section>
