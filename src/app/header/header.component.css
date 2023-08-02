@@ -1,3 +1,4 @@
+/* Estilos para telas maiores (desktops) */
 .main-header {
   padding: 10px 0px;
   display: flex;
@@ -15,24 +16,32 @@
 
 .main-header__title--blue {
   color: var(--blue);
-  color: blue;
   font-size: 60px;
 }
 
 .main-header__title--orange {
   color: var(--orange);
-  color: orange;
   font-size: 60px;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__menu ul {
   display: flex;
   justify-content: flex-end;
-  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header__menu li {
+  margin-right: 20px;
 }
 
 .main-header__menu a {
-  padding: 10px 10px;
   color: var(--gray);
   font-weight: 400;
   font-size: 22px;
@@ -45,11 +54,18 @@
   color: #fff;
 }
 
-.container-menu {
+.cart-link {
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  flex: 1;
+  align-items: center;
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-link i {
+  margin-right: 5px;
+  margin-top: -5px;
 }
 
 .badge-carrinho {
@@ -57,4 +73,36 @@
   padding: 5px 10px;
   border-radius: 4px;
   color: white;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: -8px;
+}
+
+/* Estilos para tablets e dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .main-header {
+    padding: 10px;
+  }
+
+  .main-header__title {
+    font-size: 60px;
+  }
+
+  .main-header__title--blue,
+  .main-header__title--orange {
+    font-size: 50px;
+  }
+
+  .container-menu ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main-header__menu li {
+    margin: 0 10px;
+  }
+
+  .main-header__menu a {
+    font-size: 18px;
+  }
 }
